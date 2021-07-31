@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Chart } from 'react-charts'
 
 import './App.css';
- 
+
 function App() {
 
 	const getRandomData = (quantity, size, dimensions = 2) => {
@@ -52,14 +52,14 @@ function App() {
 
 	const getSeriesStyle = React.useCallback(
 		() => ({
-		  	transition: 'all .5s ease'
+			transition: 'all .5s ease'
 		}),
 		[]
 	)
 
 	const getDatumStyle = React.useCallback(
 		() => ({
-		  	transition: 'all .5s ease'
+			transition: 'all .5s ease'
 		}),
 		[]
 	)
@@ -80,7 +80,7 @@ function App() {
 				break;
 		}
 	}
- 
+
 	return (
 		<div className="grid">
 			<div onClick={() => randomizeData('bar')}>
@@ -102,7 +102,7 @@ function App() {
 						}
 					]}
 					getSeriesStyle={getSeriesStyle}
-          			getDatumStyle={getDatumStyle}
+					getDatumStyle={getDatumStyle}
 				/>
 			</div>
 			<div onClick={() => randomizeData('line')}>
@@ -124,7 +124,7 @@ function App() {
 						}
 					]}
 					getSeriesStyle={getSeriesStyle}
-          			getDatumStyle={getDatumStyle}
+					getDatumStyle={getDatumStyle}
 				/>
 			</div>
 			<div onClick={() => randomizeData('bubble')}>
@@ -147,7 +147,7 @@ function App() {
 						}
 					]}
 					getSeriesStyle={getSeriesStyle}
-          			getDatumStyle={getDatumStyle}
+					getDatumStyle={getDatumStyle}
 				/>
 			</div>
 			<div onClick={() => randomizeData('area')}>
@@ -169,7 +169,7 @@ function App() {
 						}
 					]}
 					getSeriesStyle={getSeriesStyle}
-          			getDatumStyle={getDatumStyle}
+					getDatumStyle={getDatumStyle}
 				/>
 			</div>
 		</div>
