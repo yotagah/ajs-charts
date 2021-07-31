@@ -12,7 +12,7 @@ function App() {
 			for(let i = 0; i < size; i++) {
 				const item = [];
 				for(let j = 0; j < dimensions; j++) {
-					if(j == 0) {
+					if(j === 0) {
 						item.push(i);
 					} else {
 						item.push(20*Math.random());
@@ -31,19 +31,6 @@ function App() {
 
 		return data;
 	}
-
-	const axes = [
-		{
-			primary: true,
-			type: 'ordinal',
-			position: 'bottom'
-		},
-		{
-			type: 'linear',
-			position: 'left',
-			stacked: true
-		}
-	];
 
 	const [barData, setBarData] = useState(getRandomData(3, 10, 2));
 	const [lineData, setLineData] = useState(getRandomData(7, 10, 2));
@@ -77,6 +64,8 @@ function App() {
 				break;
 			case 'area':
 				setAreaData(getRandomData(10, 10, 2));
+				break;
+			default:
 				break;
 		}
 	}
