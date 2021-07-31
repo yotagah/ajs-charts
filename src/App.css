@@ -3,10 +3,13 @@
     width: calc(100vw - 2rem);
     height: calc(100vh - 2rem);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
 .grid div {
-    
+    cursor: pointer;
+    width: 95%;
+    height: 95%;
+    margin: auto;
 }
